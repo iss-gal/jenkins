@@ -33,5 +33,6 @@ pipeline
                  println "Hoy es dias_letras[dia]"
             }
             }
+        }
     }
 }
