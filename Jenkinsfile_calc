@@ -5,9 +5,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Addition"
-                a=$((first + second)
-                echo a;
+                script {
+                    
+                    println(first+second);
+               }
             }
         }
     }
