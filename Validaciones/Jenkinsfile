@@ -31,6 +31,38 @@ pipeline
             {
                  if(dia == 2)
                  println "Hoy es ${dias_letras[dia]}"
+                 sh whoami
+            }
+            }
+        }
+        stage('Mercoles')
+        {
+            steps
+            {
+            script
+            {
+                 if(dia == 3)
+            }
+            }
+        }
+        stage('Xovees')
+        {
+            steps
+            {
+            script
+            {
+                 if(dia == 4)
+            }
+            }
+        }
+        stage('Venres')
+        {
+            steps
+            {
+            script
+            {
+                 if(dia == 5)
+                 sh whoami
             }
             }
         }
