@@ -1,0 +1,28 @@
+def nombre = "Gustavo"
+def apellido = "Vargas"
+pipeline
+{
+    agent any
+    stages
+    {
+        stage("Nombre en Stage")
+        {
+            steps
+            {
+                script
+                {
+                    nombre = "Ariel"
+                    println nombre
+                }
+            }
+            
+        }
+        stage("Nombre en stage 2")
+        {
+        steps
+        {
+            println nombre + " " +  apellido
+        }
+        }
+    }
+}
