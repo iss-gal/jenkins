@@ -6,8 +6,8 @@ pipeline {
         stage('build') {
             steps {
                 echo "Addition"
-                a = first + second;
-                print a;
+                a=$((first + second)
+                echo a;
             }
         }
     }
