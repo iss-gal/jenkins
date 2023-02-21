@@ -7,25 +7,7 @@ pipeline {
             steps {
                 echo "Addition"
                 a = first + second;
-                println a;
-            }
-            steps {
-                echo "Adition"
-                sh "echo Hello from the shell"
-                sh "hostname"
-                sh "uptime"
-            }
-            steps {
-                echo "Adition"
-                sh "echo Hello from the shell"
-                sh "hostname"
-                sh "uptime"
-            }
-            steps {
-                echo "Adition"
-                sh "echo Hello from the shell"
-                sh "hostname"
-                sh "uptime"
+                print a;
             }
         }
     }
