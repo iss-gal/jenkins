@@ -18,11 +18,19 @@ pipeline
             {
             script
             {
-		println dias_letras[dia]
-                 if(dia == 2)
-                 println "Este pipeline no se ejecuta los días martes"
+             if(dia == 1)
             }
             }
         }
+        stage('Martes')
+        {
+            steps
+            {
+            script
+            {
+                 if(dia == 2)
+                 println "Hoy es dias_letras[dia]"
+            }
+            }
     }
 }
