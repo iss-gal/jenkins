@@ -30,7 +30,7 @@ pipeline
             script
             {
                  if(dia == 2)
-                 println "Hoy es " dias_letras[dia]
+                 println "Hoy es ${dias_letras[dia]}"
             }
             }
         }
