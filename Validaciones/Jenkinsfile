@@ -19,7 +19,7 @@ pipeline
               script
               {
                 if(dia == 1)
-                 println "Hoy es dias_letras[dia]"
+                echo""
               }
             }
         }
@@ -30,7 +30,7 @@ pipeline
             script
             {
                  if(dia == 2)
-                 echo""
+                 println "Hoy es dias_letras[dia]"
             }
             }
         }
