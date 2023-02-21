@@ -20,7 +20,6 @@ pipeline
               {
                 if(dia == 1)
                  println "Hoy es dias_letras[dia]"
-                 sh "whoami"
               }
             }
         }
