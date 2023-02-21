@@ -19,7 +19,7 @@ pipeline
               script
               {
                 if(dia == 1)
-                echo ""
+                 println "Hoy es dias_letras[dia]"
               }
             }
         }
