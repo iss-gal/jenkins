@@ -16,10 +16,11 @@ pipeline
         {
             steps
             {
-            script
-            {
-             if(dia == 1)
-            }
+              script
+              {
+                if(dia == 1)
+                echo ""
+              }
             }
         }
         stage('Martes')
