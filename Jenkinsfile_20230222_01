@@ -13,7 +13,6 @@ pipeline
                 {
                     def c = (a*b)
                     prinln c
-                    //writeFile(file: "read.txt", text: c)
                 }
             }
         }
