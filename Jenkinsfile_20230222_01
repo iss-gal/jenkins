@@ -11,10 +11,8 @@ pipeline
             {
                 script
                 {
-                   // def file = 'text.txt'
-                    //def read_file = readFile(file: "text.txt")
                     def c = (a*b)
-                    echo c
+                    prinln c
                     //writeFile(file: "read.txt", text: c)
                 }
             }
