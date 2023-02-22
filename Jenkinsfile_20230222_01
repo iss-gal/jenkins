@@ -18,7 +18,7 @@ pipeline
                 }
             }
         }
-        stage ("Creacion de Archivo")
+        stage ("Lectura de Archivo")
         {
             steps
             {
