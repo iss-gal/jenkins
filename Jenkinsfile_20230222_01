@@ -12,7 +12,7 @@ pipeline
                 script
                 {
                     def c = (a*b)
-                    prinln c
+                    println c
                 }
             }
         }
