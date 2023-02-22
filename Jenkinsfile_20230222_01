@@ -1,3 +1,5 @@
+def a = 10
+def b = 20
 pipeline
 {
     agent any
@@ -9,11 +11,9 @@ pipeline
             {
                 script
                 {
-                    def a = 10
-                    def b = 20
                    // def file = 'text.txt'
                     //def read_file = readFile(file: "text.txt")
-                    c = (10*20)
+                    c = (a*b)
                     echo c
                     //writeFile(file: "read.txt", text: c)
                 }
