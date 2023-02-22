@@ -1,0 +1,18 @@
+pipeline
+{
+    agent any
+    stages
+    {
+        stage("Leer archivo")
+        {
+            steps
+            {
+                script
+                {
+                    def lectura = readFile(file: "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Creacion de Ficheros\\salida.txt")
+                    println lectura
+                }
+            }
+        }
+    }
+}
