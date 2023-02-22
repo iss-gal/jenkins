@@ -1,0 +1,31 @@
+pipeline
+{
+    agent any
+stages
+{
+        stage("Creacion")
+        {
+            steps
+            {
+                script
+                {
+                    def info = "Informacion a ser utilizada"
+                    writeFile (file: "salida.txt", text: info)
+                }
+            }
+            
+        }
+    stage("Lectura")
+    {
+        steps
+        {
+            script
+            {
+                def data = readFile(file: "salida.txt")
+                println data
+            }
+            
+        }
+    }
+}
+}
