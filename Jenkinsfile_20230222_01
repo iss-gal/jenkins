@@ -13,6 +13,9 @@ pipeline
                 {
                     def c = (a*b)
                     println c
+                    writeFile(file: "texto.txt", text: c)
+                    def lectura = readFile(file: "texto.txt")
+                    println lectura
                 }
             }
         }
