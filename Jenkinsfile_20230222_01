@@ -14,20 +14,9 @@ pipeline
                 {
                     def c = (a*b)
                     println c
-                    writeFile(file: 'text.txt', text: c)
+                    echo "${c}"
                 }
             }
         }
-        stage ("Lectura de Archivo")
-        {
-            steps
-            {
-                script
-                {
-                    def data = readFile(file: 'text.txt')
-                    println data
-                }
-             }
-        }     
     }
 }
