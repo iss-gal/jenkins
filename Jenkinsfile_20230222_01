@@ -12,9 +12,13 @@ pipeline
             {
                 script
                 {
+                    touch file_text
                     def c = (a*b)
                     println c
                     sh "echo ${c} >> ${file_text}"
+                    c = ((a+b)*2)
+                    sh "echo ${c} >> ${file_text}"
+
                 }
             }
         }
