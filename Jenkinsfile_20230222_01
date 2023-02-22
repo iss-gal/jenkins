@@ -12,7 +12,8 @@ pipeline
             {
                 script
                 {
-                    sh "> file_text"
+                    sh "rm file_text"
+                    sh "touch file_text"
                     def c = (a*b)
                     println c
                     sh "echo ${c} >> ${file_text}"
