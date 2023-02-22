@@ -1,0 +1,19 @@
+pipeline
+{
+    agent any
+    stages
+    {
+        stage ("Creacion de Archivo")
+        {
+            steps
+            {
+                script
+                {
+                    def fecha = new Date()
+                    def informacion = "Hola que tal, como te va!!!!! La hora actual es \n" + fecha
+                    writeFile(file: "salida.txt", text: informacion)
+                }
+            }
+        }
+    }
+}
