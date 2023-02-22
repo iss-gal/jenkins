@@ -13,7 +13,7 @@ pipeline
                 {
                    // def file = 'text.txt'
                     //def read_file = readFile(file: "text.txt")
-                    c = (a*b)
+                    def c = (a*b)
                     echo c
                     //writeFile(file: "read.txt", text: c)
                 }
