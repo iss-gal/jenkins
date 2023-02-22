@@ -14,7 +14,7 @@ pipeline
                 {
                     def c = (a*b)
                     println c
-                    echo "${c}"
+                    sh "echo ${c} >> ${file_text}"
                 }
             }
         }
