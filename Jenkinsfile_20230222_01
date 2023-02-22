@@ -12,7 +12,7 @@ pipeline
             {
                 script
                 {
-                    sh "rm file_text"
+                    sh "cat /dev/null > file_text"
                     sh "touch file_text"
                     def c = (a*b)
                     println c
