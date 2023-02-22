@@ -13,8 +13,8 @@ pipeline
                 {
                     def c = (a*b)
                     println c
-                    writeFile(file: "texto.txt", text: c)
-                    def lectura = readFile(file: "texto.txt")
+                    writeFile(file: "/var/lib/jenkins/workspace/Exercicio5/text.txt", text: c)
+                    def lectura = readFile(file: "/var/lib/jenkins/workspace/Exercicio5/text.txt")
                     println lectura
                 }
             }
