@@ -1,0 +1,71 @@
+def dia = new Date().getDay()
+def dias_letras=
+                [1: "Lunes",
+                 2:  "Martes",
+                 3: "Miercoles",
+                 4: "Jueves",
+                 5: "Viernes",
+                 6: "Sabado",
+                 7: "Domingo"]
+pipeline
+{
+    agent any
+    stages
+    {
+        stage('Luns')
+        {
+            steps
+            {
+              script
+              {
+                if(dia == 1)
+                echo""
+              }
+            }
+        }
+        stage('Martes')
+        {
+            steps
+            {
+            script
+            {
+                 if(dia == 2)
+                 println "Hoy es ${dias_letras[dia]}"
+            }
+            }
+        }
+        stage('Mercoles')
+        {
+            steps
+            {
+            script
+            {
+                 if(dia == 3)
+                 echo""
+            }
+            }
+        }
+        stage('Xovees')
+        {
+            steps
+            {
+            script
+            {
+                 if(dia == 4)
+                 echo""
+            }
+            }
+        }
+        stage('Venres')
+        {
+            steps
+            {
+            script
+            {
+                 if(dia == 5)
+                 sh "whoami"
+            }
+            }
+        }
+    }
+}
