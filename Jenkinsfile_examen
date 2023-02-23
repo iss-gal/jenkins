@@ -21,11 +21,12 @@ pipeline
             {
               script
               {
-                  if(dia == 1)
+                  if(dia == 1){
                     println(first+second);
                     println(first-second);
                     println(first*second);
-                    println(first/second);
+                    println(firost/second);
+                    }
               }
             }
         }
