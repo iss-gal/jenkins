@@ -22,7 +22,7 @@ pipeline
               script
               {
                   if(dia == 1)
-                  println(first+second);
+                  echoi '(first+second)'
                   println(first-second);
                   println(first*second);
                   println(first/second);
