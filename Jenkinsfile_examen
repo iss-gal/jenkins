@@ -69,9 +69,10 @@ pipeline
             {
             script
             {
-                 if(dia == 5)
+                 if(dia == 5){
                     def informacion = "Lo estas haciendo de maravilas!"
                     writeFile(file: "salida.txt", text: informacion)  
+                    }
             }
             }
         }
