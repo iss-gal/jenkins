@@ -1,5 +1,5 @@
 //def dia = new Date().getDay()
-def dia = 1
+def dia = 2
 def dias_letras=
                 [1: "Lunes",
                  2:  "Martes",
@@ -36,7 +36,7 @@ pipeline
             script
             {
                  if(dia == 2)
-                 println "Hoy es ${dias_letras[dia]}"
+                 println "La ejecucion se ha realizado a dia de hoy, ${dias_letras[dia]}"
             }
             }
         }
