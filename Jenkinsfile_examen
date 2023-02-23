@@ -1,4 +1,5 @@
-def dia = new Date().getDay()
+//def dia = new Date().getDay()
+def dia = 1
 def dias_letras=
                 [1: "Lunes",
                  2:  "Martes",
@@ -7,6 +8,8 @@ def dias_letras=
                  5: "Viernes",
                  6: "Sabado",
                  7: "Domingo"]
+def first = 10
+def second = 20
 pipeline
 {
     agent any
@@ -19,7 +22,10 @@ pipeline
               script
               {
                 if(dia == 1)
-                echo""
+                    println(first+second);
+                    println(first-second);
+                    println(first*second);
+                    println(first/second);
               }
             }
         }
