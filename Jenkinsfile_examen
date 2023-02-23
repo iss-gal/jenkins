@@ -1,6 +1,6 @@
 //def dia = new Date().getDay()
 def clima = "Malo"
-def dia = 4
+def dia = 5
 def dias_letras=
                 [1: "Lunes",
                  2:  "Martes",
@@ -22,11 +22,11 @@ pipeline
             {
               script
               {
-                if(dia == 1)
-                    println(first+second);
-                    println(first-second);
-                    println(first*second);
-                    println(first/second);
+                  if(dia == 1)
+                  println(first+second);
+                  println(first-second);
+                  println(first*second);
+                  println(first/second);
               }
             }
         }
@@ -70,7 +70,8 @@ pipeline
             script
             {
                  if(dia == 5)
-                 sh "whoami"
+                    def informacion = "Lo estas haciendo de maravilas!"
+                    writeFile(file: "salida.txt", text: informacion)  
             }
             }
         }
