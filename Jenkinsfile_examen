@@ -1,4 +1,5 @@
-def dia = new Date().getDay()
+//def dia = new Date().getDay()
+def dia = 1
 def clima = "Malo"
 def dias_letras=
                 [1: "Lunes",
