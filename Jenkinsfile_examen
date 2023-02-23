@@ -26,7 +26,7 @@ pipeline
                     println(first+second);
                     println(first-second);
                     println(first*second);
-                    println(firost/second);
+                    println(first/second);
                     }
               }
             }
