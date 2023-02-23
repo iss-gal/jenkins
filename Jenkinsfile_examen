@@ -26,7 +26,6 @@ pipeline
                   int a = 100
                   int b = 200
                   c = a + b
-                  echo '(first+second)'
                   echo "${c}"
                   println(first*second);
                   println(first/second);
