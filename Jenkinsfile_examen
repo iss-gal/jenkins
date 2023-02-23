@@ -1,5 +1,6 @@
 //def dia = new Date().getDay()
-def dia = 3
+def clima = "Malo"
+def dia = 4
 def dias_letras=
                 [1: "Lunes",
                  2:  "Martes",
@@ -58,7 +59,7 @@ pipeline
             script
             {
                  if(dia == 4)
-                 echo""
+                 echo "El clima en Compostela es ${clima}."
             }
             }
         }
