@@ -47,7 +47,7 @@ pipeline
             script
             {
                  if(dia == 3)
-                 echo""
+                 echo "SE ha ejecutado esta pipeline"
             }
             }
         }
